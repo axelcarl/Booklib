@@ -19,7 +19,7 @@ app.set('layout', 'layouts/layout')
 app.use(expressLayouts)
 app.use(methodOverride('_method'))
 app.use(express.static('public'))
-app.use(express.urlencoded({ limit: '50mb', extended: false }));
+app.use(express.urlencoded({extended: false }));
 app.use(express.json());
 
 const mongoose = require('mongoose')
