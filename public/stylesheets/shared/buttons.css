@@ -1,0 +1,43 @@
+:root {
+  --color-btn-primmary-background: hsl(var(--color-base-hue), 100%
+  ,83%);
+  --color-btn-primary-text: hsl(var(--color-base-hue), 100%
+  ,20%);
+  --color-btn-border: hsl(var(--color-base-hue), 100%
+  ,1%);
+  --color-danger: rgb(211, 75, 75);
+}
+
+.btn {
+  border: 1px solid var(--color-btn-border);
+  border-radius: .25rem;
+  padding: .5rem 1rem;
+  font-size: 1.2rem;
+  font-family: 'Gidole';
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  color: var(--color-btn-primary-text);
+  background-color: var(--color-btn-primary-background);
+}
+
+.btn-row {
+  display: flex;
+  align-items: flex-start;
+}
+
+.btn-row > * {
+  margin-left: 1rem;
+}
+
+.btn-row > *:first-child {
+  margin-left: 0;
+}
+
+.btn:hover {
+  color: white;
+}
+
+.btn-danger:hover {
+  color: var(--color-danger);
+}
